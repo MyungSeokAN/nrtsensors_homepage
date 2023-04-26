@@ -18094,48 +18094,15 @@ footer {
 .list-group-categories .badge {
   background: #e5e5e5; }
 
-.feed {
-  padding: 0;
-  list-style: none; }
-  .feed li:not(:last-child) {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #e5e5e5; }
-
-.feed-item {
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-  -webkit-transition-delay: 0s;
-  -moz-transition-delay: 0s;
-  transition-delay: 0s;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -ms-flex-align: center !important;
-  align-items: center !important; }
-  .feed-item:hover .feed-item-content h3 {
-    color: #4829B2; }
-  .feed-item img {
-    border-radius: 0.25rem;
-    width: 70px; }
-
-.feed-item-content {
-  padding-left: 15px; }
-  .feed-item-content h3 {
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
-    -webkit-transition-delay: 0s;
-    -moz-transition-delay: 0s;
-    transition-delay: 0s;
-    margin-bottom: 0;
-    font-size: 1rem;
-    font-weight: 400; }
-  .feed-item-content span {
-    font-size: 0.875rem;
-    color: #151515; }
+.feed {padding:0; list-style: none; }
+.feed li:not(:last-child) {margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #e5e5e5;}
+.feed-item {-webkit-transition: all 0.2s; -moz-transition: all 0.2s; transition: all 0.2s; -webkit-transition-delay: 0s; -moz-transition-delay: 0s; transition-delay: 0s; display: -ms-flexbox; display: flex; -ms-flex-align: start; align-items: flex-start; -ms-flex-align: center !important; align-items: center !important;}
+.feed-item:hover .feed-item-content h3 {color:#0030AE;}
+a .feed-item-content h3 {color:#0030AE;}
+.feed-item img {border-radius:0.25rem; width:120px;}
+.feed-item-content {padding-left:15px;}
+.feed-item-content h3 {-webkit-transition: all 0.2s; -moz-transition: all 0.2s; transition: all 0.2s; -webkit-transition-delay: 0s; -moz-transition-delay: 0s; transition-delay: 0s; margin-bottom: 0; font-size:1.25rem; font-weight: 400;}
+.feed-item-content span {font-size:0.875rem; color:#888;}
 
 .card-price .svg-icon {
   margin-bottom: 2.8125rem; }
