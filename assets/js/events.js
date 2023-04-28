@@ -60,7 +60,7 @@ function setEventContent(fromIndex) {
 
 function loadEventContent() {
   const timestamp = Date.now();
-  $.getJSON("/events.json?v=" + timestamp, function(json) {
+  $.getJSON("events.json?v=" + timestamp, function(json) {
     currentData = json;
     setEventContent(currentLastIndex);
   });

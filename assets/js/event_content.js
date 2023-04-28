@@ -28,7 +28,7 @@ function setEventContent(pid, data) {
 
 function loadEventContent(pid) {
   const timestamp = Date.now();
-  $.getJSON("/events.json", function(json) {
+  $.getJSON("events.json", function(json) {
     setEventContent(pid, json);
   });
 }
