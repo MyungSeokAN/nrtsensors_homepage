@@ -86,53 +86,14 @@
           <aside class="col-md-8 align-items-center">
             <div class="widget">
               <span class="widget-title">Latest Events & News</span>
-              <ul class="feed">
-                <!-- start 목록 loop 5개-->
-                <li>
-                  <a href="events_view.html" class="feed-item">
-                    <img src="assets/images/products-p3.jpg" alt="Image">
-                    <!-- 이미지 없으면 <img src="assets/images/events-default.png" alt="Image"> end -->
-                    <div class="feed-item-content">
-                      <h3>Title</h3>
-                      <span>YYYY.MM.DD</span>
-                    </div>
-                  </a>
-                </li>
-                <!-- end 목록 loop-->
-                <li>
-                  <a href="events_view.html" class="feed-item">
-                    <img src="assets/images/events-default.png" alt="Image">
-                    <div class="feed-item-content">
-                      <h3>Amazing views of Paradise Bay</h3>
-                      <span>2023.05.01</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="events_view.html" class="feed-item">
-                    <img src="assets/images/products-p3.jpg" alt="Image">
-                    <div class="feed-item-content">
-                      <h3>Amazing views of Paradise Bay</h3>
-                      <span>2023.05.01</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="events_view.html" class="feed-item">
-                    <img src="assets/images/products-p3.jpg" alt="Image">
-                    <div class="feed-item-content">
-                      <h3>Amazing views of Paradise Bay</h3>
-                      <span>2023.05.01</span>
-                    </div>
-                  </a>
-                </li>
+              <ul class="feed" id="event_list">                
               </ul>
             </div>
           </aside>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="event_more_button_area" style="display:none;">
           <div class="col-md-8 py-5 text-center">
-            <a href="events_list.html" class="btn btn-blue px-5"><i class="icon-plus2"></i> More</a>
+            <button class="btn btn-blue px-5" id="moreContentButton"><i class="icon-plus2"></i> More</button>
           </div>
         </div>
       </div>
@@ -166,5 +127,6 @@
 
     <script src="assets/js/vendor.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/events.js"></script>
   </body>
 </html>
