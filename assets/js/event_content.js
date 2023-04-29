@@ -23,12 +23,17 @@ function setEventContent(pid, data) {
   $("#content_title").html(ele.title);
   $("#content_text").html(ele.content);
   $("#content_date").html(ele.date);
-  $("#content_image").attr("src", ele.image);
+  if (ele.hasOwnProperty('image') && ele.image != "") {
+    $("#content_image").attr("src", ele.image);
+  }
+  else {
+    $("#content_image").hide();
+  }
 }
 
 function loadEventContent(pid) {
   const timestamp = Date.now();
-  $.getJSON("events.json", function(json) {
+  $.getJSON("events.json?v=" + timestamp, function(json) {
     setEventContent(pid, json);
   });
 }
