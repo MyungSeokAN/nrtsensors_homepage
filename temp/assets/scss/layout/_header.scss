@@ -1,0 +1,44 @@
+//
+// header
+//
+//
+
+header {
+	@include selection(none);
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+	border-bottom: $border-width solid transparent;
+
+	@include media-breakpoint-up(lg) {
+		&[class*="-dark"] {
+			border-color: rgba($black, .1);
+
+			.navbar-logo-light {
+				display: block!important;
+			}
+		}
+
+		&[class*="-light"] {
+			border-color: $border-color;
+
+			.navbar-logo-dark {
+				display: block!important;
+			}
+		}
+	}
+
+}
+
+
+
+// header on desktop
+@include media-breakpoint-up(lg) {
+	.header-sticky {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: auto;
+		left: 0;
+	}
+}
